@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container">
-  <h2 class="py-5">All toys</h2>
+  <h2 class="py-5">Tüm Oyuncaklar</h2>
 </div>
 
 <div class="container">
@@ -15,7 +15,7 @@ layout: default
             <img src="{{ product.image | relative_url }}" alt="{{ product.name }} product image" class="w-100">
             <div class="card-body">
               <h5 class="card-title">{{ product.name }}</h5>
-              <span class="badge rounded-pill text-bg-primary">€ {{ product.price }} EUR</span>
+              <span class="badge rounded-pill text-bg-primary">₺ {{ product.price }}</span>
             </div>
           </a>
         </div>
