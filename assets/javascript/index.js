@@ -71,13 +71,13 @@ const renderCart = () => {
       <td>
         <button type="button" class="btn btn-block btn-sm btn-outline-primary add-to-cart" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-location="cart">+</button>
       </td>
-      <td class="text-right">${item.price * item.quantity}€</td>
+      <td class="text-right">${item.price * item.quantity} ₺</td>
       <td class="text-right"><button class="btn btn-outline-danger btn-sm cart-item-remove" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-quantity="${item.quantity}">Remove</button></td>
     </tr>`
   }).join('');
 
   const total = document.querySelector('.total')
-  total.innerText = `${cartLS.total()}€`;
+  total.innerText = `${cartLS.total()} ₺`;
 
   cartItemsListeners();
 }
