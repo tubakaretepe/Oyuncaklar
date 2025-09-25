@@ -1,0 +1,44 @@
+---
+layout: default
+title: About
+permalink: /contact/
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="py-5">Mesajınızı yazın</h2>
+      <form id="form-contact" action="{{ '/' | relative_url }}" method="get" aria-label="Contact Form">
+        <div class="mb-3">
+          <label for="full_name" class="label">Tam Adınız</label>
+          <input type="text" required="required" class="form-control" name="full_name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="label">Email</label>
+          <input type="text" required="required" class="form-control" name="email" placeholder="your@email.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="order_number" class="label">Sipariş No</label>
+          <input type="text" class="form-control" name="order_number" placeholder="Your order number" id="Order-number">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="label">Mesajınız</label>
+          <textarea id="message" required="required" name="message" placeholder="Message text..." class="form-control"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="btn btn-primary">
+      </form>
+
+    </div>
+
+    <div class="col p-4">
+      <h3 class="py-5">İletişim Bilgileri</h3>
+
+      <p>Toptancılar Çarşısı, Eminönü, 34220</p>
+      <p>212 550-1578</p>
+    </div>
+  </div>
+</div>
